@@ -6,6 +6,8 @@
   box-sizing: border-box;
 }
 
+/* ------VARIABLES------ */
+
 :root {
   --FF: "Outfit", sans-serif;
   --FF-HEADING: "Young Serif", serif;
@@ -24,8 +26,10 @@
   --LIST-ITEM-COLOR-2: hsl(332, 51%, 32%);
 
   --BORDER-COLOR: hsl(30, 18%, 87%);
-  --BORDER: 2px solid var(--BORDER-COLOR);
+  --BORDER: 1px solid var(--BORDER-COLOR);
 }
+
+/* ------BODY------ */
 
 body {
   align-items: center;
@@ -38,6 +42,8 @@ body {
   font-family: var(--FF);
 }
 
+/* ------IMAGE------ */
+
 img {
   border-radius: 1.2rem;
   display: flex;
@@ -45,6 +51,8 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+/* ------LIST------ */
 
 ul,
 ol {
@@ -60,6 +68,8 @@ li {
   line-height: 2rem;
 }
 
+/* ------RECIPE------ */
+
 #recipe {
   background-color: var(--BG-COLOR-RECIPE);
   border-radius: 1.8rem;
@@ -70,6 +80,8 @@ li {
   max-width: 735px;
   padding: 2.4rem;
 }
+
+/* ------HEADINGS------ */
 
 h1,
 h2:not(div h2) {
@@ -127,6 +139,34 @@ div li::marker {
   margin-top: 0.5rem;
 }
 
+/* ------NUTRITION-SECTION------ */
+
+#nutrition p {
+  margin: 1rem 0;
+}
+
+#nutrition table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#nutrition tr td:first-child {
+  padding-left: 1.6rem;
+}
+
+#nutrition tr td:last-child {
+  color: var(--FONT-COLOR-HEADING-3);
+  font-weight: 700;
+  padding-right: 1.6rem;
+}
+
+#nutrition td {
+  padding: 0.5rem;
+}
+
+#nutrition tr td:not(tr:last-child td) {
+  border-bottom: var(--BORDER);
+}
 .attribution {
   font-size: 11px;
   text-align: center;
