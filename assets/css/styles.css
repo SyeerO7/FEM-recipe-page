@@ -1,3 +1,59 @@
+*,
+*::after,
+*:before {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --FF: "Young Serif", serif;
+  --FF-HEADING: "Outfit", sans-serif;
+  --FS: 16px;
+
+  --BG-COLOR-RECIPE: hsl(0, 0%, 100%);
+  --BG-COLOR-BODY: hsl(30, 54%, 90%);
+  --BG-COLOR-Prep-Time: hsl(330, 100%, 98%);
+
+  --FONT-COLOR-HEADING-1: hsl(24, 5%, 18%);
+  --FONT-COLOR-HEADING-2: hsl(332, 51%, 32%);
+  --FONT-COLOR-HEADING-3: hsl(14, 45%, 36%);
+  --FONT-COLOR: hsl(30, 10%, 34%);
+
+  --LIST-ITEM-COLOR-1: hsl(14, 45%, 36%);
+  --LIST-ITEM-COLOR-2: hsl(332, 51%, 32%);
+
+  --BORDER-COLOR: hsl(30, 18%, 87%);
+  --BORDER: 1px solid var(--BORDER-COLOR);
+}
+
+body {
+  align-items: center;
+  background-color: var(--BG-COLOR-BODY);
+  color: var(--FONT-COLOR);
+  display: flex;
+  flex-direction: column;
+  font-size: var(--FS);
+  justify-content: center;
+}
+
+img {
+  border-radius: 1.2rem;
+  display: flex;
+  flex: 1;
+  max-width: 100%;
+  height: auto;
+}
+
+ul,
+ol {
+  margin-left: 1.4rem;
+}
+
+li::marker {
+  color: var(--LIST-ITEM-COLOR-1);
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
