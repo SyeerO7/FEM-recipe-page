@@ -120,6 +120,13 @@ div li::marker {
   border-bottom: var(--BORDER);
 }
 
+/* ------INSTRUCTIONS-SECTION------ */
+
+#instructions li {
+  line-height: 1.4rem;
+  margin-top: 0.5rem;
+}
+
 .attribution {
   font-size: 11px;
   text-align: center;
