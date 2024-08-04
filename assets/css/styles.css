@@ -24,7 +24,7 @@
   --LIST-ITEM-COLOR-2: hsl(332, 51%, 32%);
 
   --BORDER-COLOR: hsl(30, 18%, 87%);
-  --BORDER: 1px solid var(--BORDER-COLOR);
+  --BORDER: 2px solid var(--BORDER-COLOR);
 }
 
 body {
@@ -48,7 +48,7 @@ img {
 
 ul,
 ol {
-  margin-left: 1.5rem;
+  margin: 1rem 0 0 1.5rem;
 }
 
 li::marker {
@@ -57,6 +57,7 @@ li::marker {
 
 li {
   padding-left: 1rem;
+  line-height: 2rem;
 }
 
 #recipe {
@@ -70,7 +71,8 @@ li {
   padding: 2.4rem;
 }
 
-h1, h2:not(div h2) {
+h1,
+h2:not(div h2) {
   font-family: var(--FF-HEADING);
   font-size: 1.8rem;
   color: var(--FONT-COLOR-HEADING-3);
@@ -81,6 +83,8 @@ h1 {
   font-size: 2.5rem;
   color: var(--FONT-COLOR-HEADING-1);
 }
+
+/* ------FIRST-SECTION------ */
 
 #recipe section:first-child {
   display: flex;
@@ -98,16 +102,22 @@ div h2 {
   color: var(--FONT-COLOR-HEADING-2);
   font-size: 1.25rem;
 }
-div h2, div strong {
-  font-weight: 600;
-}
 
-div li {
-  margin-top: 1rem;
+div h2,
+div strong {
+  font-weight: 600;
 }
 
 div li::marker {
   color: var(--LIST-ITEM-COLOR-2);
+}
+
+/* ------INGREDIENTS-SECTION------ */
+
+#ingredients,
+#instructions {
+  padding-bottom: 2rem;
+  border-bottom: var(--BORDER);
 }
 
 .attribution {
