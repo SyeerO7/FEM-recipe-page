@@ -173,6 +173,34 @@ div li::marker {
   border-bottom: var(--BORDER);
 }
 
+/* ------MEDIA-QUERIES------ */
+
+@media screen and (max-width: 735px) {
+  img {
+    border-radius: 0;
+  }
+
+  #recipe {
+    margin: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 2.32rem;
+  }
+
+  #recipe article {
+    padding: 2rem;
+    margin-top: 0;
+  }
+
+  ul li{
+    line-height: 1.5rem;
+    padding-bottom: 0.5rem;
+  }
+}
+
 .attribution {
   background-color: var(--BG-COLOR-RECIPE);
   width: 100%;
