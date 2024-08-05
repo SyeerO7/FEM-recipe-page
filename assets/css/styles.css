@@ -74,10 +74,16 @@ li {
   border-radius: 1.8rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
   margin: 6rem 0;
   max-width: 735px;
   padding: 2.4rem;
+}
+
+article {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 /* ------HEADINGS------ */
@@ -97,7 +103,7 @@ h1 {
 
 /* ------FIRST-SECTION------ */
 
-#recipe section:first-child {
+#recipe section:first-of-type {
   display: flex;
   flex-direction: column;
   gap: 2rem;
@@ -166,7 +172,10 @@ div li::marker {
 #nutrition tr td:not(tr:last-child td) {
   border-bottom: var(--BORDER);
 }
+
 .attribution {
+  background-color: var(--BG-COLOR-RECIPE);
+  width: 100%;
   font-size: 11px;
   text-align: center;
 }
